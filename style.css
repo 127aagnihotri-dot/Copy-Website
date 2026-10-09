@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(28,69,135);
+    color: white;
+}
+
+#me{
+    font-size:50px;
+    font-weight: bold;
+}
+
+.me3{
+    font-size:24px;
+    font-weight: bold;
+    color:white;
+
+}
+
+#me2{
+    font-size:30px;
+    font-weight: bold;
+
+}
+
+#extra{
+    font-size:30px;
+    font-weight: bold;
+
+}
+
+.me4{
+    font-size:24px;
+    font-weight: bold;
+}
+
+
+#college{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:auto auto auto auto auto auto auto auto auto;
+    gap:10px;
+    img{
+        grid-column:span 3;
+        grid-row:span 3;
+    }
+    p{
+        grid-column:span 2;
+        grid-row:span 2;
+    }
+}
+
+
+img{
+   width:100px;
+   height:100px;
+}
