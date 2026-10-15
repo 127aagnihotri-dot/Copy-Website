@@ -9,12 +9,28 @@ pictures.push("https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26
 
 function Button1(){
     let wausGoodShawty=document.getElementById("wausGoodShawty");
-    wausGoodShawty =JSON.parse(wausGoodShawty);
-    pictures.push(wausGoodShawty);
-    wausGoodShawty = pictures.shift();
-    document.getElementById("wausGoodShawty").innerHTML = wausGoodShawty.src;
+    console.log(wausGoodShawty.src);
+    if(wausGoodShawty.src==[0]){
+     wausGoodShawty.src=pictures[1];
+    }
+    if(wausGoodShawty.src==[1]) {
+        wausGoodShawty.src=pictures[2];
+    }
+    else{
+        wausGoodShawty.src=pictures[0];
+    }
 }
 
 function Button2(){
-
+    let wausGoodShawty=document.getElementById("wausGoodShawty");
+    console.log(wausGoodShawty.src);
+    if(wausGoodShawty.src==[2]){
+        wausGoodShawty.src=pictures[1];
+    }
+    if(wausGoodShawty.src==[1]) {
+        wausGoodShawty.src=pictures[0];
+    }
+    else{
+        wausGoodShawty.src=pictures[2];
+    }
 }

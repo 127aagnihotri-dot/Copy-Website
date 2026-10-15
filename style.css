@@ -1,7 +1,42 @@
 body{
     background-color: rgb(28,69,135);
     color: white;
+    display:flex;
+    margin:0;
+    font-size:large;
 }
+
+#side{
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    position:sticky !important;
+    padding: 50px;
+    height:100%;
+    color:black;
+    align-items: center;
+    top:0;
+    left:0;
+    height:100vh;
+    padding-top:10px;
+    a{
+        margin:10px;
+    }
+    a:hover{
+        background-color: lightgray;
+        color:white;
+    }
+
+}
+#body{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    padding-left:100px;
+    left:50vw;
+    padding-top:0;
+}
+
 
 #me{
     font-size:50px;
@@ -52,6 +87,7 @@ body{
     p{
         grid-rows:span 1;
         text-align: center;
+        align-items: center;
     }
 }
 
