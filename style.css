@@ -26,6 +26,12 @@ body{
         background-color: lightgray;
         color:white;
     }
+    h4:hover{
+        font-weight:bold;
+        padding-left:10px;
+        padding-right:10px;
+
+    }
 
 }
 #body{
